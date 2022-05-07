@@ -1,0 +1,9 @@
+csc -platform:x86 -r:AutomationServerTlbForDotNet.dll CSharpAutomationClient.cs
+
+
+
+//FOR VB
+
+vbc.exe /t:winexe /r:Microsoft.VisualBasic.dll /r:AutomationServerTypeLibForDotNet.dll VBAutomationClient.vb
+
+vbc -platform:x86 /t:winexe -r:Microsoft.VisualBasic.dll -r:AutomationServerTypeLibForDotNet.dll VBAutomationClient.vb
